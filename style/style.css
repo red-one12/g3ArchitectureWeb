@@ -14,13 +14,11 @@
     display: flex;
 }
 .orange-btn{
-    height: 64px;
-    width: 180px;
     border-radius: 8px;
     font-size: 20px;
     font-weight: 600;
     background-color: #FF900E;
-    padding: 20px 20px;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
@@ -86,6 +84,51 @@ a{
 .hero-section-img img{
     width: 100%;
 }
+
+
+
+
+
+/* our-features section is starting...  */
+.our-features{
+    /* background-color: lightcoral; */
+    padding: 30px 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.grid-img-div{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.grid-img-div img{
+    width: 100%;
+}
+.our-features .text-div{
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.our-features .text-div h1{
+    font-size: 45px;
+}
+.our-features .text-div h1 span{
+    color: #FF900E;
+}
+.our-features .text-div h1 .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.our-features .text-div p{
+    font-size: 16px;
+    color: #727272;
+}
+
+
 
 
 
