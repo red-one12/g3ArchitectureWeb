@@ -229,7 +229,53 @@ main {
 
 
 
+
+/* facts section starting...  */
+.some-facts-div{
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+.some-facts-div h1{
+    font-size: 45px;
+}
+.some-facts-div p{
+    font-size: 16px;
+    color: #727272;
+}
+.facts .cards{
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.facts .cards .card{
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px 25px;
+}
+
+
+
+
+
+
+
+
+
+
 /* media query starging...  */
+
+
+
+@media screen and (max-width: 1100px){
+    .facts .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+
 @media screen and (max-width: 560px) {
     header nav .logo-name h1 {
         font-size: 30px;
@@ -252,7 +298,16 @@ main {
         font-size: 16px;
         padding: 10px 15px;
     }
+    .facts .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 950px) {
     nav ul {
@@ -302,5 +357,9 @@ main {
     }
     .love-and-enjoy .photo-div .button-div p{
         font-size: 18px;
+    }
+    .some-facts-div{
+        width: 100%;
+        text-align: center;
     }
 }
