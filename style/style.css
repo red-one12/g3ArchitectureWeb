@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+    width: 100%;
+}
 
 /* shared class */
 .work-sans {
@@ -54,6 +58,7 @@ li {
 a {
     text-decoration: none;
     font-size: 18px;
+    color: black;
 }
 
 
@@ -103,6 +108,7 @@ a {
 /* our-features section is starting...  */
 main {
     max-width: 1440px;
+    margin: 0px auto;
     /* background-color: rebeccapurple; */
     /* margin-top: 130px; */
     padding: 30px 130px;
@@ -155,7 +161,70 @@ main {
 
 
 
+/* love-and-enjoy section is starting...  */
+.love-and-enjoy{
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 90px 0px;
+}
+.love-and-enjoy .text-div{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 80px;
+    width: 55%;
+}
+.up-div h1{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+.up-div p{
+    font-size: 16px;
+    color: #727272;
+}
 
+.down-div{
+    flex-direction: column;
+    gap: 30px;
+}
+.down-div .card{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.114);
+    padding: 15px;
+}
+.love-and-enjoy .photo-div{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+.love-and-enjoy .photo-div img{
+    width: 100%;
+}
+.love-and-enjoy .photo-div .button-div{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -70px;
+    left: -50px;
+
+}
+.love-and-enjoy .photo-div .button-div h1{
+    font-size: 60px;
+    color: white;
+}
+.love-and-enjoy .photo-div .button-div p{
+    font-size: 25px;
+    color: white;
+}
 
 
 
@@ -210,5 +279,28 @@ main {
     .orange-btn {
         font-size: 16px;
         padding: 10px 15px;
+    }
+    .love-and-enjoy{
+        flex-direction: column;
+        width: 100%;
+    }
+    .love-and-enjoy .text-div{
+        width: 100%;
+    }
+    .love-and-enjoy .photo-div{
+        width: 100%;
+        gap: 10px;
+    }
+    .love-and-enjoy .photo-div .button-div{
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .love-and-enjoy .photo-div .button-div h1{
+        font-size: 45px;
+    }
+    .love-and-enjoy .photo-div .button-div p{
+        font-size: 18px;
     }
 }
