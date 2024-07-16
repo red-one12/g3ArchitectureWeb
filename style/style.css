@@ -193,7 +193,7 @@ main {
     gap: 30px;
 }
 .down-div .card{
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.114);
+    box-shadow: 0px 0px 10px 5px rgba(102, 102, 102, 0.114);
     padding: 15px;
 }
 .love-and-enjoy .photo-div{
@@ -258,12 +258,50 @@ main {
 
 
 
+/* sponsor section is starting...  */
+.sponsor{
+    text-align: center;
+    margin-top: 90px;
+}
+.sponsor-title{
+    width: 70%;
+    margin: 70px auto;
+}
+.sponsor-title h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.sponsor-title p{
+    font-size: 16px;
+    color: #727272;
+}
+
+.company-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.company-logo img{
+    filter: grayscale(1);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.company-logo img:hover{
+    filter: grayscale(0);
+}
 
 
 
 
 
 /* media query starging...  */
+
+@media screen and (max-width: 1200px) {
+    .company-logo{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
 
 
 
@@ -276,34 +314,7 @@ main {
 }
 
 
-@media screen and (max-width: 560px) {
-    header nav .logo-name h1 {
-        font-size: 30px;
-    }
 
-    .grid-img-div {
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-    }
-
-    .our-features .text-div {
-        width: 100%;
-    }
-
-    main {
-        padding: 30px 70px;
-    }
-
-    .orange-btn {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-    .facts .cards{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-    }
-}
 
 
 
@@ -361,5 +372,44 @@ main {
     .some-facts-div{
         width: 100%;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    header nav .logo-name h1 {
+        font-size: 30px;
+    }
+
+    .grid-img-div {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .our-features .text-div {
+        width: 100%;
+    }
+
+    main {
+        padding: 30px 70px;
+    }
+
+    .orange-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    .facts .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .company-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: lightcoral; */
+    }
+    .company-logo img{
+        width: 30%;
     }
 }
